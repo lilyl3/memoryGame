@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jacob’s Journey – Instructions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="instructions-page">
+
+<div id="instructions-container">
+    <h1>🎯 Jacob’s Journey / 雅各布的旅程</h1>
+
+    <h2>Instructions / 游戏说明</h2>
+    <p>
+        Guide Jacob through the key events of his life in the correct order. Collect points by moving to the correct event squares. Finish all events to complete the game and see your final score!<br>
+        引导雅各布按照正确顺序经历人生中的关键事件。通过走到正确的事件格子获得积分。完成所有事件后即可完成游戏并查看最终得分！
+    </p>
+
+    <h3>How to Play / 游戏玩法：</h3>
+    <ol>
+        <li>Use the arrow keys to move Jacob on the board.<br>使用箭头键移动雅各布在棋盘上的位置。</li>
+        <li>Jacob is marked with 🙂.<br>雅各布用 🙂 标记。</li>
+        <li>Correct moves gain points; wrong moves lose points.<br>正确移动可获得积分；错误移动会扣分。</li>
+        <li>Complete all events in chronological order.<br>按时间顺序完成所有事件。</li>
+        <li>Finish all events to win and see your score.<br>完成所有事件即可获胜并查看分数。</li>
+    </ol>
+
+    <div>
+        <h3>Select Language / 选择语言</h3>
+        <button id="englishBtn" class="lang-btn">English</button>
+        <button id="chineseBtn" class="lang-btn">中文</button>
+    </div>
+
+    <script>
+        document.getElementById('englishBtn').addEventListener('click', () => {
+            window.location.href = "game.html?language=english";
+        });
+        document.getElementById('chineseBtn').addEventListener('click', () => {
+            window.location.href = "game.html?language=chinese";
+        });
+    </script>
+</div>
+
+</body>
+</html>

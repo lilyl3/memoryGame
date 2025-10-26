@@ -1,0 +1,123 @@
+/* ======================
+   Global Styles
+====================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* ======================
+   Instructions Page
+====================== */
+.instructions-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#instructions-container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+#instructions-container h1 {
+    color: #2a7ae2;
+    margin-bottom: 10px;
+}
+
+#instructions-container h2 {
+    margin: 5px 0 5px 0;
+}
+
+#instructions-container h3 {
+    margin: 5px 0 5px 0;
+}
+
+#instructions-container ol {
+    text-align: left;
+    margin: 15px 0 25px 20px;
+}
+
+.lang-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2a7ae2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.lang-btn:hover {
+    background-color: #1958a3;
+    transform: scale(1.05);
+}
+
+/* ======================
+   Game Page
+====================== */
+.game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* less overall padding */
+}
+
+.game-page h1 {
+    color: #2a7ae2;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    width: 100%;
+    max-width: 575px;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.cell {
+    background-color: #e3eff9;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(14px, 2vmin, 24px);
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 3px;
+    transition: all 0.2s ease;
+}
+
+#game-container {
+    display: none; /* hidden initially */
+}
+
+.playerPos {
+    background-color: #f6e78a;
+    color: #000;
+    flex-direction: column;
+}
+
+.congrats {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
