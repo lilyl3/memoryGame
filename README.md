@@ -48,17 +48,17 @@ Then visit:
 http://localhost:8080/
 ```
 
-## Test
-```bash
-mvn test
-```
-
 ### 🎮 Gameplay Flow
 1. Choose a language (English or 中文)
 2. Redirects to `game.html?language=english` or `?language=chinese`
 3. Uses arrow keys to move Jacob (🙂) across the board
 4. The backend checks if the move is correct and updates the score
 5. Once all events are completed, the backend returns the final result
+
+## Test
+```bash
+mvn test
+```
 
 ## 🏗 Project Structure (Current)
 MemoryGame is currently a modular monolith built with Spring Boot.
