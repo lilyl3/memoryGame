@@ -19,7 +19,7 @@ public class Board {
         for (String event : this.events.getEvents()) {
             Position pos;
             do {
-                pos = new Position(rand.nextInt(this.width), rand.nextInt(height));
+                pos = new Position(rand.nextInt(this.height), rand.nextInt(width));
             } while (uniqPos.contains(pos) || pos.equals(startPosition));
         
             uniqPos.add(pos);
@@ -36,9 +36,11 @@ public class Board {
         initBoardState();
     }
 
-    public final BoardState getBoardState() { return boardState;}
+    public int getHeight() { return height; };
+    public int getWidth() { return width; }
 
-    public final Position getStartingPostion() {return boardState.getStartPosition() ;}
+    public final BoardState getBoardState() { return boardState;}
+    public final Position getStartingPostion() {return boardState.getStartPosition(); }
 
     public Boolean isXWithinBounds(int x) { return x >= 0 && x < height; }
     public Boolean isYWithinBounds(int y) { return y >= 0 && y < width; }

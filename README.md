@@ -48,6 +48,10 @@ Then visit:
 http://localhost:8080/
 ```
 
+## Test
+```bash
+mvn test
+```
 
 ### 🎮 Gameplay Flow
 1. Choose a language (English or 中文)
