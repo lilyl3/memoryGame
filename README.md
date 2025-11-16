@@ -105,5 +105,6 @@ memorygame/
 ### Jenkins
 - Run Jenkins via Docker. See `Dockerfile`. You may need to set up by running `docker exec -it <container_id> bash' to get the password.
 - Configure `tools` in Jenkins to: `Mavin3: 3.9.11`.
-- Automate unit tests by creating a webhook in GitHub. Use ngrok to expose a public URL that maps to http://localhost:8080 via `ngrok http 8080`.
-    - Note: The `Payload URL` must end with `/webhooks/`
+- Use ngrok to expose a public URL that maps to http://localhost:8080 via `ngrok http 8080`.
+- Automate unit tests by creating a webhook in GitHub.
+    - Note: The `Payload URL` must end with `<public URL>/webhooks/`
