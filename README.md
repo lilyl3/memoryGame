@@ -103,4 +103,5 @@ memorygame/
 5. Story Builder / Admin Service – allows educators or creators to add new stories dynamically; also a potential separate service in the future.
 
 ### Jenkins
+- Run Jenkins via Docker. See `Dockerfile`. You may need to set up by running `docker exec -it <container_id> bash' to get the password.
 - Automate unit tests by creating a webhook in GitHub. - Use ngrok to expose a public URL that maps to http://localhost:8080.
