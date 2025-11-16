@@ -23,8 +23,9 @@ public class BoardTest {
     @Test
     void testInitializationAndReset() {
         BoardState state = board.getBoardState();
+        // Set, List are part of Java Collections => interface with methods like add(), remove(), etc.
         Set<String> boardEvents = new HashSet<>();
-        Set<String> inputEvents = new HashSet<>(List.of(events));
+        Set<String> inputEvents = new HashSet<>(List.of(events));   // Array is NOT in Java Collections
         List<Position> eventIndices = new ArrayList<>();
 
         // Check if all events are on the board
