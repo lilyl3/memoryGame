@@ -1,24 +1,8 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.4-openjdk-11' // Maven + JDK pre-installed
-            args '-v /root/.m2:/root/.m2'   // optional: persist Maven cache
-        }
-    }
-
+    agent any
+    tools { maven 'Maven3' }
     stages {
-        stage('Build') {
-            steps {
-                // Recompile and package the project into a .jar
-                sh 'mvn clean package -DskipTests'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                // Run unit tests
-                sh 'mvn test'
-            }
-        }
+        stage('Build') { steps { sh 'mvn clean package -DskipTests' } }
+        stage('Test')  { steps { sh 'mvn test' } }
     }
 }
