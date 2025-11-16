@@ -103,4 +103,4 @@ memorygame/
 5. Story Builder / Admin Service – allows educators or creators to add new stories dynamically; also a potential separate service in the future.
 
 ### Jenkins
-Automate unit tests by creating a webhook in GitHub. Use ngrok to expose a public URL.
+Automate unit tests by creating a webhook in GitHub. Use ngrok to expose a public URL that maps to http://localhost:8080.
