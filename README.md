@@ -101,3 +101,6 @@ memorygame/
 3. Frontend – HTML/CSS/JS UI, already fetching data from the backend.
 4. Analytics Service – tracks gameplay metrics (time, performance, engagement); could become a separate service later.
 5. Story Builder / Admin Service – allows educators or creators to add new stories dynamically; also a potential separate service in the future.
+
+### Jenkins
+Automate unit tests by creating a webhook in GitHub. Use ngrok to expose a public URL.
